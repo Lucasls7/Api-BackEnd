@@ -1,4 +1,4 @@
-let tarefas = [{ id: 1, texto: "node.js", prioridade: "media", coluna: "feito" }];
+let tarefas = [{ usuarioId: 1, usuario: "Lucas", texto: "Estudar MVC", prioridade: "alta", coluna: "feito" }];
 let proximoId = 2;
 
 function buscarTodas() {
@@ -6,15 +6,16 @@ function buscarTodas() {
 }
 
 function buscarPorId(id) {
-    return tarefas.find(t => t.id === id);
+    return tarefas.find(t => t.usuarioId === id);
 }
 
-function criar({ texto, prioridade, coluna }) {
+function criar(dados) {
     const nova = {
-        id: proximoId++,
-        texto,
-        prioridade: prioridade || 'media',
-        coluna: coluna || 'afazer'
+        usuarioId: proximoId++,
+        usuario: dados.usuario,
+        texto: dados.texto,
+        prioridade: dados.prioridade,
+        coluna: dados.coluna
     };
     tarefas.push(nova);
     return nova;
@@ -30,7 +31,7 @@ function atualizar(id, dadosAtualizados) {
 }
 
 function remover(id) {
-    const idx = tarefas.findIndex(t => t.id === id);
+    const idx = tarefas.findIndex(t => t.usuarioId === id);
     if (idx === -1) return null;
 
     return tarefas.splice(idx, 1)[0];
