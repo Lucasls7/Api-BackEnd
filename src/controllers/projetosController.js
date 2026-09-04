@@ -1,5 +1,3 @@
-// controllers/projetoController.js
-
 const projetoModel = require('../models/projetosModel');
 
 function buscarProjetos(req, res) {

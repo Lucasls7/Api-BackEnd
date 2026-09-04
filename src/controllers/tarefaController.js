@@ -1,5 +1,3 @@
-// controllers/tarefaController.js
-
 const tarefaModel = require('../models/tarefaModel');
 
 function buscarTarefas(req, res) {

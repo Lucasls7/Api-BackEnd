@@ -1,5 +1,3 @@
-// models/projetoModel.js
-
 let projetos = [
     { id: 1, descricao: "MVC- usuarios", ativo: true }
 ];

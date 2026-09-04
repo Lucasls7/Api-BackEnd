@@ -1,5 +1,3 @@
-// models/tarefaModel.js
-
 let tarefas = [{ id: 1, texto: "node.js", prioridade: "media", coluna: "feito" }];
 let proximoId = 2;
 

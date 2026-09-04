@@ -1,5 +1,3 @@
-// controllers/usuarioController.js
-
 const usuarioModel = require('../models/usuarioModel');
 
 function buscarUsuarios(req, res) {

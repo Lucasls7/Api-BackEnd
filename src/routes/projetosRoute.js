@@ -1,5 +1,3 @@
-// routes/projetoRoutes.js
-
 const express = require('express');
 const router = express.Router();
 const projetoController = require('../controllers/projetosController');

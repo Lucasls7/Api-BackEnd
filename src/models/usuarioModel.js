@@ -1,5 +1,3 @@
-// models/usuarioModel.js
-
 let usuarios = [
     { id: 1, nome: "lucas", email: "lucas@123.gmail.com", senha: "1233" }
 ];
